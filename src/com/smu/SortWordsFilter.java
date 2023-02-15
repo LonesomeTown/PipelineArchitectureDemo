@@ -16,6 +16,7 @@ public class SortWordsFilter implements Runnable {
     @Override
     public void run() {
         try {
+            //Use the TreeSet to sort the characters.
             Set<String> sortedWords = new TreeSet<>(inputQueue.take());
             outputQueue.put(sortedWords);
         } catch (InterruptedException e) {

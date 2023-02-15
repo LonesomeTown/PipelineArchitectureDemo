@@ -17,6 +17,7 @@ public class RemoveDuplicatesFilter implements Runnable{
     @Override
     public void run() {
         try {
+            //Use the set to remove duplicates
             Set<String> uniqueWords = new HashSet<>(inputQueue.take());
             outputQueue.put(uniqueWords);
         } catch (InterruptedException e) {
