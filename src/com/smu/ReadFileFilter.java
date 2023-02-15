@@ -29,7 +29,7 @@ public class ReadFileFilter implements Runnable{
             String line = null;
             while ((line = reader.readLine()) != null) {
                 // Read words from the input file and put them into the array list.
-                String[] lineWords = line.split(" ");
+                String[] lineWords = line.split(", ");
                 words.addAll(Arrays.asList(lineWords));
             }
             //Put the words list into the output queue.
