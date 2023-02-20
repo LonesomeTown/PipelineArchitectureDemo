@@ -1,4 +1,4 @@
-# SoftwareArchitectureHW1
+# Pipeline Architecture Demo
 Design and Code (in Java) a pipe and filter application which prints a sorted list of every unique word in a text file, i.e. each unique word should appear only once on the output.
 
 ## Level-one Diagram
